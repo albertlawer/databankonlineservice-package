@@ -1,0 +1,19 @@
+{
+    "name": "databank/onlineservice",
+    "description": "This is a laravel package to enable third party clients to connect to the core API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Albert Lawer",
+            "email": "albert.lawer@databankgroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Databank\\OnlineService\\": "src/"
+        }
+    }
+}
