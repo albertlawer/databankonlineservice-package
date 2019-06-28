@@ -24,9 +24,6 @@ Method: Post
 
 
 
-  
-
-
 The package comes with sameple forms for tests.
 ```php
 Username check = http://URL:PORT/getusername  
@@ -34,4 +31,9 @@ Login = http://URL:PORT/getlogin
 Create a user = http://URL:PORT/getcreateuser  
 Update a user = http://URL:PORT/getupdate  
 Change user password = http://URL:PORT/getchangepassword
+```
+
+Response is json having 3 keys, any response with code not 100 is a failure
+```json
+	{"resp_code":"100","resp_desc":"Success"}
 ```
