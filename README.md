@@ -24,9 +24,10 @@ Method: Post
 
 
 
+  
+
 
 The package comes with sameple forms for tests.
-
 ```php
 Username check = http://URL:PORT/getusername  
 Login = http://URL:PORT/getlogin  
