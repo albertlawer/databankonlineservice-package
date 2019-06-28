@@ -1,27 +1,35 @@
 Databank Online Service Package
 =======================
 
-[![Latest Version](https://img.shields.io/github/release/albertlawer/databankonlineservice-package.svg?style=flat-square)](https://github.com/albertlawer/databankonlineservice-package.svg/releases)
-[![Build Status](https://img.shields.io/travis/albertlawer/databankonlineservice-package.svg?style=flat-square)](https://travis-ci.org/albertlawer/databankonlineservice-package.svg)
-[![Total Downloads](https://img.shields.io/packagist/dt/albertlawer/databankonlineservice-package.svg?style=flat-square)](https://packagist.org/packages/albertlawer/databankonlineservice-package.svg)
+[![Issues](https://img.shields.io/github/issues/albertlawer/databankonlineservice-package.svg?style=flat-square)](https://github.com)
+[![Stars](https://img.shields.io/github/stars/albertlawer/databankonlineservice-package.svg?style=flat-square)](https://github.com)
+
+
 
 This package gives the client access to make calls to the online service application
 
 ## Docs
 
 Test Examples
+Method: Post
 
-| URL              		 | Description                       | Parameters          																 																								 			 |
+
+| Endpoint               | Description                       | Parameters          																 																								 			 |
 |------------------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| URL/getusername  		 | Check if a username is available  | `username`     	  													 																								 						 |
-| URL/getlogin	   		 | Log a user in					 | `username`, `password`, `pin` 											 																								 					  |
-| URL/getchangepassword  | Change password of a user		 | `UserName`, `NewPassword`, `AccountNumber`, `CurrentPassword` 					  																								 	 |
-| URL/getupdate  		 | Update user details  			 | `email`, `PhoneNumber`, `username`, `password`, `secret_question`, `secret_question_ans` 																								 |
-| URL/getcreateuser  	 | create a user 		  			 | `email`, `SurName`, `FirstName`, `PhoneNumber`, `AddressLine`, `DateOfBirth`, `AccountNumber`, `MotherMaidenName`, `username`, `password`, `secret_question`, `secret_question_ans` |
+| getusername  		 | Check if a username is available  | `username`     	  													 																								 						 |
+| getlogin		   		 | Log a user in					 | `username`, `password`, `pin` 											 																								 					  |
+| getchangepassword		 | Change password of a user		 | `UserName`, `NewPassword`, `AccountNumber`, `CurrentPassword` 					  																								 	 |
+| getupdate  		 	 | Update user details  			 | `email`, `PhoneNumber`, `username`, `password`, `secret_question`, `secret_question_ans` 																								 |
+| getcreateuser  	 	 | create a user 		  			 | `email`, `SurName`, `FirstName`, `PhoneNumber`, `AddressLine`, `DateOfBirth`, `AccountNumber`, `MotherMaidenName`, `username`, `password`, `secret_question`, `secret_question_ans` |
 
 
 
 
+The package comes with sameple forms for tests.
 
-
+Username check = http://URL:PORT/getusername
+Login = http://URL:PORT/getlogin
+Create a user = http://URL:PORT/getcreateuser
+Update a user = http://URL:PORT/getupdate
+Change user password = http://URL:PORT/getchangepassword
 
