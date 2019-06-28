@@ -6,7 +6,7 @@
     "authors": [
         {
             "name": "Albert Lawer",
-            "email": "albert.lawer@databankgroup.com"
+            "email": "albertlawer@yahoo.com"
         }
     ],
     "minimum-stability": "dev",
@@ -15,5 +15,13 @@
         "psr-4": {
             "Databank\\OnlineService\\": "src/"
         }
+    },
+    "extra": {
+    "laravel": {
+        "providers": [
+            "Databank\\OnlineService\\OnlineServiceServiceProvider"
+        ]
     }
+}
+
 }
