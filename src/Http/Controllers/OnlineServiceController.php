@@ -16,7 +16,8 @@
 	    public function postusername(Request $request)
 		    {
 		    	$username = $request->username;
-		    	$service_url = 'http://10.179.253.242/databank.OnlineServiceApi/onlineservice/v1/get/username?username='.$username;
+
+		    	$service_url = 'https://clientportal.databankgroup.com/onlineservice/onlineservice/v1/get/username?username='.$username;
 				
 				$ch = curl_init($service_url);
 				curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");   
@@ -71,7 +72,7 @@
 
 		public function postlogin(Request $request)
 		   {
-		   		$service_url = 'http://10.179.253.242/databank.OnlineServiceApi/onlineservice/v1/login';	
+		   		$service_url = 'https://clientportal.databankgroup.com/onlineservice/onlineservice/v1/login';	
 				$secret_key = "1BC82288BD9E4562AA2E0ABDE5F05F96";
 				$username = $request->username;
 				$password = $request->password;
@@ -142,7 +143,7 @@
 
 		public function postcreateuser(Request $request)
 		   {
-		   		$service_url = 'http://10.179.253.242/databank.OnlineServiceApi/onlineservice/v1/create/online/subscription';	
+		   		$service_url = 'https://clientportal.databankgroup.com/onlineservice/onlineservice/v1/create/online/subscription';	
 				$secret_key = "1BC82288BD9E4562AA2E0ABDE5F05F96";
 
 
@@ -253,7 +254,7 @@
 
 		public function postupdate(Request $request)
 		   {
-		   		$service_url = 'http://10.179.253.242/databank.OnlineServiceApi/onlineservice/v1/update';	
+		   		$service_url = 'https://clientportal.databankgroup.com/onlineservice/onlineservice/v1/update';	
 				$secret_key = "1BC82288BD9E4562AA2E0ABDE5F05F96";
 				
 				$Email = $request->email;
@@ -333,7 +334,7 @@
 
 		public function postchangepassword(Request $request)
 		   {
-		   		$service_url = 'http://10.179.253.242/databank.OnlineServiceApi/onlineservice/v1/reset/password';	
+		   		$service_url = 'https://clientportal.databankgroup.com/onlineservice/onlineservice/v1/reset/password';	
 				$secret_key = "1BC82288BD9E4562AA2E0ABDE5F05F96";
 				
 				$UserName = $request->UserName;
